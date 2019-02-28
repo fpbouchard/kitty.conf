@@ -1,0 +1,17 @@
+# Tab 1: Editor & git sh
+new_tab report-gen/nvim
+layout tall
+cd ~/code/report-generator
+launch /bin/bash --login -c "nvim"
+title report-gen/git sh
+launch /bin/bash --login -c "git sh"
+
+# Tab 2: jest
+new_tab report-gen/tests
+cd ~/code/report-generator
+launch /bin/bash --login -c "npm run test:watch"
+
+# Tab 3: npm start
+new_tab report-gen/dev server
+cd ~/code/report-generator
+launch /bin/bash --login -c "npm start"

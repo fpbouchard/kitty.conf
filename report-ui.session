@@ -1,0 +1,12 @@
+# Tab 1: Editor & git sh
+new_tab report-ui/nvim
+layout tall
+cd ~/code/report-ui
+launch /bin/bash --login -c "nvim"
+title report-ui/git sh
+launch /bin/bash --login -c "git sh"
+
+# Tab 2: jest
+new_tab report-ui/tests
+cd ~/code/report-ui
+launch /bin/bash --login -c "npm run test:watch"

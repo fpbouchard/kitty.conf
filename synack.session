@@ -1,0 +1,25 @@
+# Tab: Editor, git sh & rails c
+new_tab synack/nvim
+layout tall
+cd ~/code/synack
+launch /bin/bash --login -c "nvim"
+title synack/git sh
+launch /bin/bash --login -c "git sh"
+#title synack/rails c
+#launch /bin/bash --login -c "synack s synack rails c"
+
+# Tab: logs
+#new_tab synack/logs
+#cd ~/code/synack
+#launch /bin/bash --login -c "synack logs synack"
+#title synack/sidekiq logs
+#launch /bin/bash --login -c "log_sk"
+
+# Tab: npm
+new_tab synack/npm start
+cd ~/code/synack
+launch /bin/bash --login -c "npm start"
+
+# Tab: synack sync
+new_tab synack sync
+launch /bin/bash --login -c "synack sync"
